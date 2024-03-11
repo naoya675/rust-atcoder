@@ -6,11 +6,11 @@ fn main() {
         x: i32,
         a: [i32; n],
     }
+    let mut res = false;
     for ai in a {
         if ai == x {
-            println!("Yes");
-            return;
+            res = true;
         }
     }
-    println!("No");
+    println!("{}", if res { "Yes" } else { "No" });
 }
