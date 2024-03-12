@@ -32,6 +32,7 @@ fn main() {
     }
 }
 
+#[derive(Debug, Clone)]
 struct SegmentTree<T> {
     tree: Vec<T>,
     size: usize,
