@@ -17,7 +17,7 @@ fn main() {
             dp[i + 2] = dp[i + 2].min(dp[i] + b[i]);
         }
     }
-    let mut res = Vec::new();
+    let mut res = vec![];
     let mut i = n - 1;
     loop {
         res.push(i);
